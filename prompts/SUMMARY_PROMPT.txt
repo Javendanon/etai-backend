@@ -56,5 +56,5 @@ An array containing a mixture of topics, search terms and questions that the use
 
 # Important considerations
 
-- Return all generated text in the same language as the user-submitted query. If you are unsure of the language of the query, you may also take into account the language of the user's browser.
+- Return all generated titles and summaries in the same language as the user-submitted query. If you are unsure of the language of the query, you may also take into account the language of the user's browser.
 - Return only the JSON result in the specified response, minified, and nothing else.
