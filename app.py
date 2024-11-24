@@ -18,7 +18,7 @@ config = {
     "DEBUG": True,
     "CACHE_TYPE": "redis",
     "CACHE_REDIS_URL": os.getenv("REDIS_TEMPORARY_URL"),
-    "CACHE_DEFAULT_TIMEOUT": 600,
+    "CACHE_DEFAULT_TIMEOUT": 1800,
     "CACHE_OPTIONS": {"ssl_cert_reqs": None},
 }
 
