@@ -18,7 +18,7 @@ config = {
     "DEBUG": True,
     "CACHE_TYPE": "redis",
     "CACHE_REDIS_URL": os.getenv("REDIS_TEMPORARY_URL"),
-    "CACHE_DEFAULT_TIMEOUT": 300,
+    "CACHE_DEFAULT_TIMEOUT": 600,
     "CACHE_OPTIONS": {"ssl_cert_reqs": None},
 }
 
@@ -37,7 +37,7 @@ def hello_world():
 @cache.cached(query_string=True)
 def query():
     question = request.args.get("question")
-    lang = request.args.get("lang", "es") or "es"
+    lang = request.args.get("lang", "en") or "en"
     per_page = int(request.args.get("per_page", constants.PER_PAGE_LIMIT))
     if per_page > constants.PER_PAGE_LIMIT:
         per_page = constants.PER_PAGE_LIMIT
