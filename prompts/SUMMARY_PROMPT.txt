@@ -30,7 +30,9 @@ A modified version of the user query with improved grammar and punctuation, addi
 
 ## introduction_summary
 
-A markdown snippet, consisting of up to four paragraphs containing a general introduction to the overall topic discussed in the articles, generated using your general knowledge of it. They should be around 300-400 characters long. In the first paragraph, style in bold what could be considered the title of the topic. In every other paragraph, style in bold the main idea of said paragraph. The bold portion does not need necessarily have to be near the beginning of the paragraph.
+A markdown snippet, consisting of up to four paragraphs containing a general introduction to the overall topic discussed in the articles, generated using a mixture of your knowledge and the abstracts of the given scientific articles. They should be around 300-400 characters long. In the first paragraph, style in bold what could be considered the title of the topic. In every other paragraph, style in bold the main idea of said paragraph. The bold portion does not need necessarily have to be near the beginning of the paragraph.
+
+Ground the summary by citing the relevant articles on every statement, with each citation linking to the corresponding URL found in the `url` field of the input document. For example: `This is an example summary that makes a certain statement [https://journal-1.com/source1](https://journal-1.com/source1), which is reenforced by a second one [https://journal-2.com/source2](https://journal-2.com/source2).`
 
 ## key_findings
 
