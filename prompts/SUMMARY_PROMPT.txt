@@ -52,7 +52,7 @@ then include in the JSON response a `query_answer` field. This field should be a
 
 ## related_queries
 
-An array containing a mixture of topics, search terms and questions that the user can choose from to continue diving into the research. These should be very short, between 30-40 characters at most.
+An array containing a mixture of topics, search terms and questions that the user can choose from to continue diving into the research. These should be very short, between 30-40 characters at most. Aim for 6, but feel free to output less to avoid repetitive or uninteresting ones.
 
 # Important considerations
 
