@@ -38,8 +38,8 @@ Ground the summary by citing the relevant articles on every statement, with each
 
 Based on the knowledge found in the literature, identify key findings related to the topic at hand. These should be represented as an array of JSON objects with the following fields:
 
-- `title`: A single short sentence around 10 words long that summarizes and serves as an introduction to the finding
-- `summary`: A detailed summary of the finding, around 400 characters long. Ground the summary by citing the relevant articles on every statement, with each citation linking to the corresponding URL found in the `url` field of the input document. For example: `This is an example summary that makes a certain statement [https://journal-1.com/source1](https://journal-1.com/source1), which is reenforced by a second one [https://journal-2.com/source2](https://journal-2.com/source2).`
+- `title`: A single short sentence around 10 words long that summarizes and serves as an introduction to the finding. It should always end in a period.
+- `summary`: A detailed summary of the finding, written as a continuation of the title, around 400 characters long. Ground the summary by citing the relevant articles on every statement, with each citation linking to the corresponding URL found in the `url` field of the input document. For example: `This is an example summary that makes a certain statement [https://journal-1.com/source1](https://journal-1.com/source1), which is reenforced by a second one [https://journal-2.com/source2](https://journal-2.com/source2).`
 
 Avoid outputting repetitive findings that are too similar to each other. Prioritize outputting findings that are unique and fully supported by the evidence in the articles, and feel free to decide the right amount of findings.
 
